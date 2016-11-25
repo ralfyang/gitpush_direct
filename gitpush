@@ -3,6 +3,7 @@
 ### goody80762@gmail.com
 ### Version 0.2
 
+Commit_comment=$@
 User_editor='vim'
 Core_editor=`git config --list |grep "core.editor" | awk -F '=' '{print $2}'`
 	if [[ $Core_editor != '$User_editor'  ]];then
@@ -18,9 +19,15 @@ echo " Please push the Enter key if you confirmed or \"n\" for stop [Enter / n] 
 echo "==========================================================================="
 echo ""
 read touch1
-	if [[ $touch1 = "n" ]]
-	then
+	if [[ $touch1 = "n" ]];	then
 		echo " You just stopped the git upload..."
 		exit 0;
 	fi
-git commit; git push -u origin master
+	
+	if [[ $Commit_comment = "" ]];then
+		git commit
+	else
+		git commit -m "$Commit_comment"
+	fi
+
+git push -u origin master
