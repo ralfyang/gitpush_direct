@@ -56,6 +56,12 @@ Branch master set up to track remote branch master from origin.
 
 ```
 
+* git update with commit comment?
+```
+$ gitpush 'update for README'
+```
+
+
 * git update for branch
 ```
 $ gitpush-branch
