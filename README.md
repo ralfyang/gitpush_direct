@@ -1,5 +1,5 @@
 # ~~git add; status; commit; push; checkout branch~~
-# 만날 치기 귀찮아서 직접 만든 스크립트(I'm a lazy guy to type a git commit every time. So that's why I made! )
+# 만날 치기 귀찮아서 직접 만든 스크립트(I'm a lazy guy to type a git commit every time. So that's why I made it! )
 ### ~~(초급자는 받지말것. 공부 할 것)~~
 
 ### Install
