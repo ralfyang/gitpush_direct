@@ -23,5 +23,5 @@ read touch1
 		echo " You just stopped the git upload..."
 		exit 0;
 	fi
-git push
+git push origin $Branch
 git checkout master
