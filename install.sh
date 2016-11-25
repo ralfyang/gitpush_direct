@@ -1,6 +1,7 @@
 #!/bin/bash
 ### Made by Ralf Yang
 ### goody80762@gmail.com
+### Version 0.2
 
 Exec_dir='/usr/local/bin'
 check_file="/tmp/sudo_check.out"
