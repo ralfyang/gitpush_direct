@@ -1,7 +1,6 @@
 #!/bin/bash
 ### Made by Ralf Yang
 ### goody80762@gmail.com
-### Version 0.2
 
 User_editor='vim'
 Core_editor=`git config --list |grep "core.editor" | awk -F '=' '{print $2}'`
