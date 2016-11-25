@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+User_editor='vim'
+Core_editor=`git config --list |grep "core.editor" | awk -F '=' '{print $2}'`
+	if [[ $Core_editor != '$User_editor'  ]];then
+		git config --global core.editor $User_editor
+	fi
+
+git add *; git status
+
+echo ""
+echo "==========================================================================="
+echo " Please push the Enter key if you confirmed or \"n\" for stop [Enter / n] "
+echo "==========================================================================="
+echo ""
+read touch1
+	if [[ $touch1 = "n" ]]
+	then
+		echo " You just stopped the git upload..."
+		exit 0;
+	fi
+git commit; git push -u origin master
