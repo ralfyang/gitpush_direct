@@ -19,8 +19,7 @@ echo " Please push the Enter key if you confirmed or \"n\" for stop [Enter / n] 
 echo "==========================================================================="
 echo ""
 read touch1
-	if [[ $touch1 = "n" ]]
-	then
+	if [[ $touch1 = "n" ]];	then
 		echo " You just stopped the git upload..."
 		exit 0;
 	fi

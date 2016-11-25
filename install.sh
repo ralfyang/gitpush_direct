@@ -3,7 +3,7 @@
 ### goody80762@gmail.com
 ver=0.2 ## Version 
 
-Exec_dir='/usr/local/bin'
+Exec_dir='/usr/local/bin/'
 check_file="/tmp/sudo_check.out"
 
 sudo 2> $check_file
