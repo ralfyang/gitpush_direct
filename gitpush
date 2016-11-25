@@ -1,4 +1,6 @@
 #!/bin/bash
+### Made by Ralf Yang
+### goody80762@gmail.com
 
 
 User_editor='vim'

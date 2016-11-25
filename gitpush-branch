@@ -1,5 +1,6 @@
 #!/bin/bash
-
+### Made by Ralf Yang
+### goody80762@gmail.com
 
 User_editor='vim'
 Core_editor=`git config --list |grep "core.editor" | awk -F '=' '{print $2}'`
@@ -10,7 +11,7 @@ Branch="gh-pages"
 
 
 git checkout $Branch
-git pull; git rebase master; git status
+git pull origin $Branch; git rebase master; git status
 
 echo ""
 echo "==========================================================================="
