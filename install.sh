@@ -9,7 +9,7 @@ check_file="/tmp/sudo_check.out"
 sudo 2> $check_file
 
 	if [[ `(grep "not found" $check_file)` = "" ]];then
-		SUOD="sudo"
+		SUDO="sudo"
 	else
 		SUDO=""
 	fi
@@ -20,7 +20,7 @@ curl -sL http://goody80.github.io/gitpush_direct/gitpush-branch -o /tmp/gitpush-
 $SUDO cp -f /tmp/gitpush $Exec_dir
 $SUDO cp -f /tmp/gitpush-branch $Exec_dir
 $SUDO chmod 755 $Exec_dir/gitpush $Exec_dir/gitpush-branch
-rm -f /tmp/gitpush /tmp/gitpush-branch
+$SUDO rm -f /tmp/gitpush /tmp/gitpush-branch
 
 Barr="==================================================================" 
 echo $Barr
