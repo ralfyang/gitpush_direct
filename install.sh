@@ -9,7 +9,7 @@ check_file="/tmp/sudo_check.out"
 sudo 2> $check_file
 
 	if [[ `(grep "not found" $check_file)` = "" ]];then
-		SUOD="sudo"
+		SUDO="sudo"
 	else
 		SUDO=""
 	fi
