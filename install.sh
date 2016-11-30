@@ -20,7 +20,7 @@ curl -sL http://goody80.github.io/gitpush_direct/gitpush-branch -o /tmp/gitpush-
 $SUDO cp -f /tmp/gitpush $Exec_dir
 $SUDO cp -f /tmp/gitpush-branch $Exec_dir
 $SUDO chmod 755 $Exec_dir/gitpush $Exec_dir/gitpush-branch
-rm -f /tmp/gitpush /tmp/gitpush-branch
+$SUDO rm -f /tmp/gitpush /tmp/gitpush-branch
 
 Barr="==================================================================" 
 echo $Barr
