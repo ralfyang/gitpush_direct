@@ -31,7 +31,7 @@ echo "    \$ gitpush "
 echo " or "
 echo "    \$ gitpush [COMMENT for commit] "
 echo " "
-echo " One more thing. 'gitpush-brach' for branch commit!!"
+echo " One more thing. 'gitpush-branch' for branch commit!!"
 echo " "
 echo " Enjoy!! :)" 
 echo $Barr
