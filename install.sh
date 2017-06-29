@@ -22,7 +22,6 @@ $SUDO cp -f /tmp/gitpush-branch $Exec_dir
 $SUDO chmod 755 $Exec_dir/gitpush $Exec_dir/gitpush-branch
 $SUDO ln -s $Exec_dir/gitpush /usr/bin/gitpush 2> /dev/null
 $SUDO ln -s $Exec_dir/gitpush-branch /usr/bin/gitpush-branch 2> /dev/null
-
 $SUDO rm -f /tmp/gitpush /tmp/gitpush-branch
 
 Barr="==================================================================" 
